@@ -1,0 +1,43 @@
+DeepSeek Agent DAG 执行流程 (使用MCP工具):
+
+=== 层级 0 ===
+- 职位审批 Agent (planner)
+  模型: deepseek-chat
+  工具: 
+
+- 职位描述准备 Agent (executor)
+  模型: deepseek-chat
+  工具: 
+
+- 招聘渠道选择 Agent (planner)
+  模型: deepseek-chat
+  工具: 
+
+- 简历筛选 Agent (analyzer)
+  模型: deepseek-chat
+  工具: 
+
+- 面试安排 Agent (planner)
+  模型: deepseek-chat
+  工具: 
+
+- 面试评估 Agent (planner)
+  模型: deepseek-chat
+  工具: 
+
+- 背景调查 Agent (planner)
+  模型: deepseek-chat
+  工具: 
+
+- 录用审批 Agent (planner)
+  模型: deepseek-chat
+  工具: 
+
+- 发放录用通知 Agent (decision)
+  模型: deepseek-chat
+  工具: 
+
+- 入职准备 Agent (planner)
+  模型: deepseek-chat
+  工具: 
+

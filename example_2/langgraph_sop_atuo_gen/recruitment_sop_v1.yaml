@@ -1,0 +1,149 @@
+ yaml_content = """
+process:
+  name: 招聘流程
+  department: 技术
+  position_level: 高级
+  created_date: '2023-11-15'
+  estimated_completion_days: 25
+tasks:
+- id: task_001
+  name: 职位审批
+  description: 招聘职位申请与审批流程
+  responsible_party:
+  - 部门负责人
+  - HRBP
+  estimated_duration: 3-5个工作日
+  prerequisites: []
+  outputs:
+  - 审批通过的职位需求表
+  status: pending
+  start_date: null
+  completion_date: null
+- id: task_002
+  name: 职位描述准备
+  description: 编写和确认职位描述(JD)
+  responsible_party:
+  - 招聘专员
+  - 部门负责人
+  estimated_duration: 1-2个工作日
+  prerequisites:
+  - 职位审批通过
+  outputs:
+  - 正式的职位描述文档
+  status: pending
+  start_date: null
+  completion_date: null
+- id: task_003
+  name: 招聘渠道选择
+  description: 确定并启动招聘渠道
+  responsible_party:
+  - 招聘专员
+  estimated_duration: 1个工作日
+  prerequisites:
+  - 职位描述准备完成
+  outputs:
+  - 渠道发布计划
+  - 职位发布链接
+  status: pending
+  start_date: null
+  completion_date: null
+- id: task_004
+  name: 简历筛选
+  description: 筛选符合条件的候选人简历
+  responsible_party:
+  - 招聘专员
+  - 部门代表
+  estimated_duration: 3-7个工作日
+  prerequisites:
+  - 招聘渠道已启动
+  outputs:
+  - 初选候选人名单
+  status: pending
+  start_date: null
+  completion_date: null
+- id: task_005
+  name: 面试安排
+  description: 安排面试时间和面试官
+  responsible_party:
+  - 招聘协调员
+  estimated_duration: 1-3个工作日
+  prerequisites:
+  - 简历筛选完成
+  outputs:
+  - 面试时间表
+  - 面试官安排
+  status: pending
+  start_date: null
+  completion_date: null
+- id: task_006
+  name: 面试评估
+  description: 进行面试并评估候选人
+  responsible_party:
+  - 面试官
+  - 部门负责人
+  estimated_duration: 1-2个工作日
+  prerequisites:
+  - 面试安排完成
+  outputs:
+  - 面试评估表
+  - 候选人评分
+  status: pending
+  start_date: null
+  completion_date: null
+- id: task_007
+  name: 背景调查
+  description: 对候选人进行背景调查
+  responsible_party:
+  - HR专员
+  estimated_duration: 3-5个工作日
+  prerequisites:
+  - 面试评估通过
+  outputs:
+  - 背景调查报告
+  status: pending
+  start_date: null
+  completion_date: null
+- id: task_008
+  name: 录用审批
+  description: 审批录用决定和薪酬待遇
+  responsible_party:
+  - 部门负责人
+  - HR负责人
+  estimated_duration: 2-3个工作日
+  prerequisites:
+  - 背景调查通过
+  outputs:
+  - 审批通过的录用通知书
+  status: pending
+  start_date: null
+  completion_date: null
+- id: task_009
+  name: 发放录用通知
+  description: 向候选人发放正式录用通知
+  responsible_party:
+  - 招聘专员
+  estimated_duration: 1个工作日
+  prerequisites:
+  - 录用审批通过
+  outputs:
+  - 签字的录用通知书
+  status: pending
+  start_date: null
+  completion_date: null
+- id: task_010
+  name: 入职准备
+  description: 准备新员工入职所需材料和设备
+  responsible_party:
+  - HR
+  - IT
+  - 行政部门
+  estimated_duration: 3-5个工作日
+  prerequisites:
+  - 录用通知已接受
+  outputs:
+  - 工位准备
+  - 设备配置
+  - 入职材料
+  status: pending
+  start_date: null
+  completion_date: null
